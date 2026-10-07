@@ -4,6 +4,7 @@ const links = [
   { href: '#countdown', label: 'Countdown' },
   { href: '#experience', label: 'Experience' },
   { href: '#balloons', label: 'Balloons' },
+  { href: '#scrapbook', label: 'Scrapbook' },
 ]
 
 export function SiteHeader() {
