@@ -1,10 +1,10 @@
 import { Star } from './star'
 
 const links = [
-  { href: '#countdown', label: 'Countdown' },
   { href: '#experience', label: 'Experience' },
   { href: '#balloons', label: 'Balloons' },
   { href: '#scrapbook', label: 'Scrapbook' },
+  { href: '#countdown', label: 'Countdown' },
 ]
 
 export function SiteHeader() {
