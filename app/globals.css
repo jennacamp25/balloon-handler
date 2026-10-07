@@ -33,6 +33,48 @@
   --radius-3xl: calc(var(--radius) * 2.2);
 
   --animate-float: float 6s ease-in-out infinite;
+  --animate-rise: rise 20s linear infinite;
+  --animate-sway: sway 5s ease-in-out infinite;
+  --animate-twinkle: twinkle 3s ease-in-out infinite;
+
+  @keyframes rise {
+    0% {
+      transform: translateY(120%);
+      opacity: 0;
+    }
+    8% {
+      opacity: 1;
+    }
+    85% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-110svh);
+      opacity: 0;
+    }
+  }
+
+  @keyframes sway {
+    0%,
+    100% {
+      transform: translateX(-10px) rotate(-4deg);
+    }
+    50% {
+      transform: translateX(10px) rotate(4deg);
+    }
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      transform: scale(0.6) rotate(0deg);
+      opacity: 0.25;
+    }
+    50% {
+      transform: scale(1.1) rotate(20deg);
+      opacity: 1;
+    }
+  }
 
   @keyframes float {
     0%,
@@ -85,7 +127,12 @@
   html {
     scroll-behavior: auto;
   }
-  .animate-float {
+  .animate-float,
+  .animate-sway,
+  .animate-twinkle {
     animation: none;
+  }
+  .animate-rise {
+    display: none;
   }
 }

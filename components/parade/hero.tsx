@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Star } from './star'
+import { FloatingSky } from './floating-sky'
 
 export function Hero() {
   return (
@@ -13,8 +14,16 @@ export function Hero() {
         className="-z-20 object-cover"
       />
       <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-night via-night/75 to-night/30" />
+      <FloatingSky />
 
       <div className="mx-auto flex min-h-[78svh] max-w-6xl flex-col justify-end gap-6 px-4 pb-16 pt-28 md:px-6 md:pb-24">
+        <figure className="flex items-center gap-3">
+          <Star className="size-6 shrink-0 animate-twinkle text-gold md:size-8" />
+          <blockquote className="font-display text-3xl font-extrabold italic tracking-tight text-gold drop-shadow-[0_2px_12px_rgba(15,22,64,0.8)] md:text-5xl">
+            {'\u201CLet\u2019s have a parade!\u201D'}
+          </blockquote>
+          <Star className="size-6 shrink-0 animate-twinkle text-primary [animation-delay:1.2s] md:size-8" />
+        </figure>
         <p className="inline-flex w-fit items-center gap-2 rounded-full bg-gold px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-accent-foreground">
           <Star className="size-4 text-primary" />
           {"Macy's Thanksgiving Day Parade Volunteer"}
