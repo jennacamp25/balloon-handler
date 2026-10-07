@@ -12,10 +12,10 @@ export default function Page() {
       <SiteHeader />
       <main>
         <Hero />
-        <Countdown />
         <Experience />
         <Balloons />
         <Scrapbook />
+        <Countdown />
       </main>
       <SiteFooter />
     </>
