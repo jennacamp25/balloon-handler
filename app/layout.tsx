@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Bricolage_Grotesque, Inter } from 'next/font/google'
+import { Bricolage_Grotesque, Chewy, Inter } from 'next/font/google'
 import './globals.css'
 
 const bricolage = Bricolage_Grotesque({
@@ -10,6 +10,12 @@ const bricolage = Bricolage_Grotesque({
 })
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+
+const chewy = Chewy({
+  subsets: ['latin'],
+  variable: '--font-chewy',
+  weight: '400',
+})
 
 export const metadata: Metadata = {
   title: "Balloon Handler | Macy's Thanksgiving Day Parade Volunteer",
@@ -37,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${bricolage.variable} ${inter.variable}`}>
+    <html lang="en" className={`${bricolage.variable} ${inter.variable} ${chewy.variable}`}>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

@@ -19,7 +19,7 @@ export function Hero() {
       <div className="mx-auto flex min-h-[78svh] max-w-6xl flex-col justify-end gap-6 px-4 pb-16 pt-28 md:px-6 md:pb-24">
         <figure className="flex items-center gap-3">
           <Star className="size-6 shrink-0 animate-twinkle text-gold md:size-8" />
-          <blockquote className="font-display text-3xl font-extrabold italic tracking-tight text-gold drop-shadow-[0_2px_12px_rgba(15,22,64,0.8)] md:text-5xl">
+          <blockquote className="-rotate-2 font-playful text-4xl tracking-wide text-gold drop-shadow-[0_2px_12px_rgba(15,22,64,0.8)] md:text-5xl">
             {'\u201CLet\u2019s have a parade!\u201D'}
           </blockquote>
           <Star className="size-6 shrink-0 animate-twinkle text-primary [animation-delay:1.2s] md:size-8" />
